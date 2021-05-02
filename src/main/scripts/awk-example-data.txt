@@ -1,0 +1,7 @@
+Norman Goldstein|engineering|22
+Becky johnson|accounting|23
+George Henry|sales|22
+June Smith|engineering|103
+Jimmy Angler|sales|4
+David kratchaw|engineering|15
+Andrew Badarmas|accounting|21

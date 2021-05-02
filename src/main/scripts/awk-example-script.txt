@@ -1,0 +1,19 @@
+
+Give a file, file name is data, name it to t.txt
+
+Norman Goldstein|engineering|22
+Becky johnson|accounting|23
+George Henry|sales|22
+June Smith|engineering|10
+Jimmy Angler|sales|4
+David kratchaw|engineering|15
+Andrew Badarmas|accounting|21
+
+how many people work in accounting?
+cat t.txt | grep accounting | awk '{split($0,a,"|"); sum += a[3]} END {print sum}'
+
+which department has the most employees?
+awk -F"|" -v max=0 "{if($3>max){content=$0; max=$3}}END{print content}" t.txt
+
+total number of people
+cat t.txt | awk '{split($0,a,"|"); sum += a[3]} END {print sum}'
